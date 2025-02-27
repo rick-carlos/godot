@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvmrg6hj6m5iu"
-path="res://.godot/imported/maeve.png-c66d27e0185c763e6de3b8dcaa511109.ctex"
+uid="uid://xbamphvwwp3d"
+path="res://.godot/imported/grain.png-446a14efc72af2c1b8615bdd59aec5df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://maeve.png"
-dest_files=["res://.godot/imported/maeve.png-c66d27e0185c763e6de3b8dcaa511109.ctex"]
+source_file="res://tiles/grain.png"
+dest_files=["res://.godot/imported/grain.png-446a14efc72af2c1b8615bdd59aec5df.ctex"]
 
 [params]
 

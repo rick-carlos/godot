@@ -1,9 +1,11 @@
-extends Sprite2D
+extends CharacterBody2D
 
 
-var speed = 150
+var speed = 150.0
 
-func _process(delta): #detecção das teclas WASD
+#Essa função é adequada pra movimentação e colisões, roda consistemente 
+#independente da taxa de FPS
+func _physics_process(delta: float) -> void: #detecção das teclas WASD
 	
 	var direção = Vector2.ZERO
 	if Input.is_action_pressed("ui_up"):
@@ -22,4 +24,7 @@ func _process(delta): #detecção das teclas WASD
 	#move o objeto, sem o speed definido, a velocidade fica em 1px por segundo
 	position += direção * speed * delta
 	#se não colocar a rotação depois da posição, vai gerar tremores.
+	move_and_slide()
+	
 	look_at(get_global_mouse_position()) #olha em direção ao mouse.
+	
